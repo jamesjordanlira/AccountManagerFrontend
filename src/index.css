@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.titulo{
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bodybg{
+      /* Establecer el background deseado para el componente */
+    background-image: linear-gradient(to bottom, #e44d4d, #5a8bed, #8aaef1, #bbd0f3, #eff1f4);
+    
+    
+}
+
+
