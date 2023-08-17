@@ -24,23 +24,23 @@ function App() {
       <AuthProvider>
         <CuentasProvider>
           <Routes>
-            <Route path='https://subtle-bublanina-b29b5f.netlify.app/' element={ <AutLayout /> }>
+            <Route path='/' element={ <AutLayout /> }>
               {/* Rutas publicas */}
               <Route index element={ <Login /> } />
-              <Route path='https://subtle-bublanina-b29b5f.netlify.app/registrar' element={ <Registrar /> } />
-              <Route path='https://subtle-bublanina-b29b5f.netlify.app/olvide-password' element={ <OlvidePassword /> } />
-              <Route path='https://subtle-bublanina-b29b5f.netlify.app/olvide-password/:token' element={ <NuevoPassword /> } />
-              <Route path='https://subtle-bublanina-b29b5f.netlify.app/confirmar/:id' element={ <ConfirmarCuenta /> } />
+              <Route path='registrar' element={ <Registrar /> } />
+              <Route path='olvide-password' element={ <OlvidePassword /> } />
+              <Route path='olvide-password/:token' element={ <NuevoPassword /> } />
+              <Route path='confirmar/:id' element={ <ConfirmarCuenta /> } />
               <Route path="*" element={<NotFound />} />
             </Route>
 
               {/* Rutas privadas */}
               
-            <Route path='https://subtle-bublanina-b29b5f.netlify.app/cuentas' element={ <RutaProtegida /> }>
+            <Route path='/cuentas' element={ <RutaProtegida /> }>
               <Route index element={<Cuentas/>} />
-              <Route path='https://subtle-bublanina-b29b5f.netlify.app/crear-cuenta' element={<NuevaCuenta/>} />
-              <Route path='https://subtle-bublanina-b29b5f.netlify.app/:id' element={<Cuenta/>} />
-              <Route path='https://subtle-bublanina-b29b5f.netlify.app/editar/:id' element={<EditarCuenta/>} />
+              <Route path='crear-cuenta' element={<NuevaCuenta/>} />
+              <Route path=':id' element={<Cuenta/>} />
+              <Route path='editar/:id' element={<EditarCuenta/>} />
             </Route>
 
           </Routes>
