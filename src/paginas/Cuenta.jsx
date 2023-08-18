@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import useCuentas from '../hooks/useCuentas';
 import Alerta from '../components/Alerta';
@@ -15,6 +15,7 @@ const Cuenta = () => {
     }, []);
 
     const { nombre, email_telefono_redSocial, password } = cuenta;
+
     if(cargando) return 'Cargando...'
 
     const handleEliminar = async (id) => {
@@ -29,7 +30,8 @@ const Cuenta = () => {
 
   return (
     <>
-        <div className="flex justify-around">
+     
+       <div className="md:flex md:flex-row md:justify-around flex flex-col space-y-5 justify-center items-start px-10">
             <div className=" space-y-2">
                 <h1 className='font-black text-4xl text-sky-600'>{nombre}</h1>
                 <p className='font-black text-2xl'><span className='text-indigo-500'>Usuario: </span>{email_telefono_redSocial}</p>
@@ -57,6 +59,7 @@ const Cuenta = () => {
                       >Eliminar</button>
             </div>
         </div>
+      
         
         {msg && <Alerta alerta={alerta}/>}
         

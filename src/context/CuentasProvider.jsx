@@ -57,7 +57,6 @@ const CuentasProvider = ({children}) => {
         }
 
         // 
-
         const nuevaCuenta = async (cuenta) => {
             try {
                 const token = localStorage.getItem('token');
@@ -81,7 +80,7 @@ const CuentasProvider = ({children}) => {
                 // usamos navigate
                 setTimeout(() => {
                     setAlerta({})
-                    navigate('/cuentas')
+                    navigate('/cuentas');
                 }, 2000)
                                 
 

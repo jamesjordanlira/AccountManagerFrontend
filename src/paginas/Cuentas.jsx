@@ -6,7 +6,7 @@ const Cuentas = () => {
 
   return (
     <>
-      <h1 className="text-4xl font-black">Tus Cuentas</h1>
+      <h1 className="text-4xl text-center font-black">Tus Cuentas</h1>
       <div className="bg-white shadow mt-10 rounded-lg">
         {cuentas.length ? 
           cuentas.map(cuenta => (
