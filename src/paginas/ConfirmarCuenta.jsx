@@ -35,7 +35,7 @@ const ConfirmarCuenta = () => {
   const { msg } = alerta;
   return (
     <>
-      <h1 className=' mt-5 md:mt-10 text-sky-600 font-black text-5xl capitalize'>Confirma tu cuenta y Organiza <span className='text-slate-700'>tus Cuentas</span>
+      <h1 className=' mt-5 md:mt-10 text-sky-600 font-black mx-10 md:mx-0 text-5xl capitalize'>Confirma tu cuenta y Organiza <span className='text-slate-700'>tus Cuentas</span>
       </h1> 
       <div className="mt-20 md:mt-10 shadow-lg px-5 py-10 rounded-xl bg-white">
         { msg && <Alerta alerta={alerta}/>}

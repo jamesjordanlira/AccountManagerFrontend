@@ -64,7 +64,7 @@ const Registrar = () => {
   return (
     <>
       <div className="container flex flex-col justify-center items-center">
-          <h1 className="titulo mt-5 text-2xl md:text-4xl md:mt-10 font-sans font-bold md:px-20 text-center"> 
+          <h1 className="titulo mt-5 text-2xl md:text-4xl md:mt-10 font-sans mx-5 font-bold md:px-20 text-center"> 
               <span className="text-gray-500">DigitalAccountManager</span> te ayuda a Gestionar tus Cuentas,  
               <span className="text-indigo-600">Registrate</span> y no pierdas tus Accesos.
           </h1>

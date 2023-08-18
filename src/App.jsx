@@ -42,7 +42,6 @@ function App() {
               <Route path=':id' element={<Cuenta/>} />
               <Route path='editar/:id' element={<EditarCuenta/>} />
             </Route>
-
           </Routes>
         </CuentasProvider>
       </AuthProvider>

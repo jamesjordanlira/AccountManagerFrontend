@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header className="px-4 py-5 bg-white border-b">
-        <div className="md:flex md:justify-between">
+        <div className="md:flex md:justify-between md:flex-row flex justify-center flex-col space-y-6 w-full">
             <h2 className="text-4xl text-sky-600 font-black text-center hover:text-sky-700 cursor-pointer">
-                <Link to={'/cuentas'}>DigitalAccountManager</Link> 
+                <Link to={'/cuentas'}>AccountManager</Link> 
             </h2>
             <input 
                 type="search" 
