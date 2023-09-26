@@ -3,6 +3,8 @@ import clienteAxios from '../config/clienteAxios';
 // aqui el useNAvigate es para redireccionar automaticamente al registrar una cuenta nueva o asi para lo que queramos.
 import { useNavigate } from 'react-router-dom';
 
+import useAuth from '../hooks/useAuth';
+
 const CuentasContext = createContext();
 
 const CuentasProvider = ({children}) => {
@@ -16,6 +18,7 @@ const CuentasProvider = ({children}) => {
 
     
     const navigate = useNavigate();
+    const auth = useAuth();
 
     useEffect(() => {
         const ObtenerCuentas = async () => {
@@ -37,7 +40,7 @@ const CuentasProvider = ({children}) => {
             }
         }
         ObtenerCuentas();
-    }, []);
+    }, [auth]);
 
         const mostrarAlerta = alerta => {
             setAlerta(alerta);
