@@ -174,6 +174,13 @@ const CuentasProvider = ({children}) => {
             }
         }
 
+        // cerrar sesion cuentas
+        const cerrarSesionCuentas = () => {
+            setCuentas([]);
+            setCuenta({});
+            setAlerta({});
+        }
+
     return (
         <CuentasContext.Provider
             value={{
@@ -185,6 +192,7 @@ const CuentasProvider = ({children}) => {
                 cuenta,
                 cargando,
                 eliminarCuenta,
+                cerrarSesionCuentas
                 
             }}
         >
