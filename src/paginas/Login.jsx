@@ -51,7 +51,7 @@ const Login = () => {
    
       <div className="bodybg min-h-screen pt-10">
             <h1 className="titulo text-white text-2xl md:text-4xl font-bold pt-5 text-center ">
-              Inicia sesión y <span className="text-black">Administra tus Cuentas</span> para que no las olvides o si ya no las recuerdas <span className="text-green-500 ">Las recuperes</span>
+              Inicia sesión y <span className="text-black">Administra tus Cuentas</span> para que no las olvides o si ya no las recuerdas <span className="text-green-500">Las recuperes</span>
             </h1>
             <figure className=' max-w-md mx-auto mt-3'>
               <img src={lentes} alt="" className=' w-52 mx-auto'/>
